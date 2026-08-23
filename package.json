@@ -1,0 +1,41 @@
+{
+  "name": "gulp-webpack-2026",
+  "version": "3.0.0",
+  "description": "Modern Gulp 5 + Webpack 5 build pipeline",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22.0.0",
+    "packageManager": "pnpm@10.33.2"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "clean": "gulp clean",
+    "image": "gulp image",
+    "webpack": "webpack --config webpack.config.js",
+    "webpack:dev": "webpack --config webpack.config.js --mode development --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "browser-sync": "^3.0.4",
+    "del": "^8.0.1",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^10.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-html-minifier-terser": "^8.0.0",
+    "gulp-rename": "^2.1.0",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^6.0.0"
+  },
+  "keywords": ["gulp", "webpack", "build", "automation", "babel"],
+  "author": "",
+  "license": "ISC",
+  "pnpm": {
+    "overrides": {
+      "immutable": ">=4.3.9"
+    }
+  }
+}
